@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://sr4g4xg312mg"
-path="res://.godot/imported/golden_freddy_portrait.png-f438e34e9067a48612effa552ab197b9.ctex"
+path="res://.godot/imported/fredbear_portrait.png-cea5ebf65a1cd89b936270980dac2050.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animatronic_sprites/golden_freddy_portrait.png"
-dest_files=["res://.godot/imported/golden_freddy_portrait.png-f438e34e9067a48612effa552ab197b9.ctex"]
+source_file="res://assets/animatronic_sprites/fredbear_portrait.png"
+dest_files=["res://.godot/imported/fredbear_portrait.png-cea5ebf65a1cd89b936270980dac2050.ctex"]
 
 [params]
 

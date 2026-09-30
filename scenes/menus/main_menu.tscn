@@ -1,6 +1,17 @@
 [gd_scene format=3 uid="uid://bo05pto54etve"]
 
 [ext_resource type="FontFile" uid="uid://neb5d8lcqomd" path="res://assets/fonts/OCRAM Regular/OCRAM Regular.ttf" id="1_xqga4"]
+[ext_resource type="Script" uid="uid://dcj84ju3f1c4d" path="res://scenes/menus/buttons.gd" id="2_ovrgc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xqga4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ovrgc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2o76q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6bivr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_imvie"]
 
 [node name="MainMenu" type="Control" unique_id=1640698231]
 layout_mode = 3
@@ -37,3 +48,57 @@ grow_vertical = 0
 theme_override_fonts/font = ExtResource("1_xqga4")
 theme_override_font_sizes/font_size = 50
 text = "Build v0.0.1"
+
+[node name="Buttons" type="VBoxContainer" parent="UI" unique_id=1132249785]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 470.0
+offset_right = 624.0
+offset_bottom = 950.0
+theme_override_constants/separation = 20
+script = ExtResource("2_ovrgc")
+
+[node name="LoadGameButton" type="Button" parent="UI/Buttons" unique_id=1776660660]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xqga4")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xqga4")
+text = "Load Game"
+alignment = 0
+
+[node name="NewGameButton" type="Button" parent="UI/Buttons" unique_id=2030138343]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xqga4")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ovrgc")
+text = "New Game"
+alignment = 0
+
+[node name="SettingsGameButton" type="Button" parent="UI/Buttons" unique_id=317074658]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xqga4")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2o76q")
+text = "Settings"
+alignment = 0
+
+[node name="CustomNightButton" type="Button" parent="UI/Buttons" unique_id=1252572863]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xqga4")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6bivr")
+text = "Custom Night"
+alignment = 0
+
+[node name="ExtrasButton" type="Button" parent="UI/Buttons" unique_id=1024813126]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xqga4")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_imvie")
+text = "Extras"
+alignment = 0
