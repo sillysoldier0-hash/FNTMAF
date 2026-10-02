@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://qiriuisuh0m4"]
+
+[node name="SettingsMenu" type="Control" unique_id=1869685892]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UI" type="Control" parent="." unique_id=1869265232]
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Buttons" type="VBoxContainer" parent="UI" unique_id=649361116]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Volume" type="HSlider" parent="UI/Buttons" unique_id=1695235663]
+layout_mode = 2
