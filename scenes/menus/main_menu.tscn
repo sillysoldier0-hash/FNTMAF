@@ -405,7 +405,7 @@ modulate = Color(0.9615895, 0.84896344, 0.95303136, 0.58431375)
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_utshk")
 autoplay = "default"
-frame_progress = 0.22653095
+frame_progress = 0.061377216
 
 [node name="LightAnimatronics" type="Control" parent="UI/AnimatronicDisplay" unique_id=1647891734]
 anchors_preset = 0
