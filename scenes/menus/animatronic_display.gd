@@ -4,7 +4,7 @@ var sprites
 var current_sprite
 var flicker_count = 0
 var prev_sprite
-var flicker_duration = randi_range(3,6)
+var flicker_duration = 6
 var sprites_dark
 var randomnumber
 var dark_sprite
@@ -26,6 +26,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+
 func _on_flicker_timer_timeout() -> void:
 	$"../FlickerDuration".start()
 	
@@ -34,7 +35,7 @@ func _on_flicker_duration_timeout() -> void:
 	static_overlay.visible = not static_overlay.visible
 	flicker_count += 1
 	if flicker_count >= flicker_duration:
-		flicker_duration = randi_range(6,7)
+		flicker_duration = randi_range(5,7)
 		if flicker_duration % 2 == 1:
 			flicker_duration -= 1
 		$"../FlickerDuration".stop()
@@ -49,6 +50,6 @@ func _on_flicker_duration_timeout() -> void:
 			dark_sprite = sprites_dark[randomnumber]
 		current_sprite.visible = true
 		dark_sprite.visible = true
-		$"../FlickerTimer".start(randf_range(4,8))
+		$"../FlickerTimer".start(randf_range(4,6))
 		
 	

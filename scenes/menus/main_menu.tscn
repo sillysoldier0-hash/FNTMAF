@@ -329,12 +329,6 @@ scale = Vector2(1.5046875, 1.5194445)
 sprite_frames = SubResource("SpriteFrames_s7rlf")
 autoplay = "default"
 
-[node name="FNTMAF Title" type="TextureRect" parent="UI" unique_id=1980355678]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_n8vdk")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="UI" unique_id=436931147]
 root_node = NodePath("../..")
 
@@ -405,7 +399,7 @@ modulate = Color(0.9615895, 0.84896344, 0.95303136, 0.58431375)
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_utshk")
 autoplay = "default"
-frame_progress = 0.061377216
+frame_progress = 0.24636656
 
 [node name="LightAnimatronics" type="Control" parent="UI/AnimatronicDisplay" unique_id=1647891734]
 anchors_preset = 0
@@ -461,11 +455,17 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("11_nkawv")
 
+[node name="FNTMAF Title" type="TextureRect" parent="UI" unique_id=1980355678]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_n8vdk")
+
 [node name="Buttons" type="VBoxContainer" parent="UI" unique_id=1132249785]
 layout_mode = 0
 offset_left = 124.0
 offset_top = 470.0
-offset_right = 624.0
+offset_right = 674.0
 offset_bottom = 950.0
 theme_override_constants/separation = 20
 script = ExtResource("2_ovrgc")
